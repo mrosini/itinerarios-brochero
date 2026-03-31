@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <script src="scripts.js"></script> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+  <div id="mySidenav" class="sidenav" style="z-index: 2;">
+    <a href="javascript:void(0)" style="font-size:3em;" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#portada" target="">Inicio</a>
+    <a href="#presentacion" target="">Presentación</a>
+    <a href="#albumes" target="">Registros fotográficos</a>
+    <a href="#ensayos" target="">Ensayos</a>
+    <a href="#fotografo" target="">El fotógrafo</a>
+    <a href="#bibliografia" target="">Bibliografía</a>
+    <a href="#creditos" target="">Créditos</a>
+  </div>
+  
+  <!-- MOSCA ISEP -->
+  <a href="https://isep-cba.edu.ar/web/itinerarios-en-el-tiempo/" class="botonhover" target="_blank" id="logoisep"><img src="img/logos/logo-mosca.png" alt=""></a>
+
+  <!-- BOTON MENU -->
+  <img src="img/menu-icon.svg" class="botonhover" style="position:fixed; z-index:1; top:30px; right: 30px; opacity:0.7; height: 3em; background-color: #00000055; border-radius: 5px;" onclick="openNav()"/>
+  
+  <!-- Todo el contenido de la web que debe estar dentro de este div para que funcione el menú (se achica el ancho del div con la acción del botón) -->
+  <div id="main">
+  
+
+
+<!-- BARRA DE PROGRESO DE LECTURA -->
+
+<nav style="position: fixed; bottom: 0; z-index: 1; width: 100%; padding: 0px;" class="navbar bg-body-tertiary">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+</nav>
+
+
+
+<!-- PORTADA -->
+
+<div id="portada" class="jumbotron d-flex align-items-center min-vh-100 parallax" style="background-image: linear-gradient(to bottom, rgba(0, 38, 38, 0.2), rgba(4, 32, 16, 0.01)), url(img/Img_fondo_encabezado.png); background-size: cover; background-position: center;">
+  <div class="container-lg  justify-content-center">
+    <div class="row seccion">
+      <div class="col-sm-6 px-4" style="color: white; margin:auto;">
+        <p class="titulo azulino" style="line-height: 1.1em;"> Fotografías de escuelas: </br>el arte de la observación</p>
+        <p class="bordo" style="font-size: 2.2em; line-height: 0.9em;">La biblioteca como espacio, el libro como soporte y la lectura como práctica</p> 
+        <br/>
+        <p class="bordo" style="font-size: 1.9em; opacity: 0.9; line-height: 0.9em;">Itinerarios en el tiempo</p> 
+        <p class="bordo" style="font-size: 1.5em; opacity: 0.9; line-height: 0.9em;">Una cartografía de la formación docente en Córdoba</p> 
+
+        <img class="mouse-move" src="img/scroll-naranja.svg" alt="" style="opacity: 0.5; height: 2em;"/>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- BLOQUE PRESENTACION -->
+<div id="presentacion" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-azulino">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-6" style="margin: auto; color:aliceblue;">
+        <p class="h1 my-2">Presentación</p>
+        <p class="my-2" style="opacity: 0.8; font-size: 1.2em;">
+          Los álbumes de la colección <strong>“Fotografías de escuela: el arte de la observación”</strong> ofrecen un conjunto de fotografías de distintas instituciones escolares de la provincia de Córdoba. Han sido seleccionadas de archivos o tomadas por un fotógrafo en función de un tema que da sentido y orienta el diseño de cada álbum. Las imágenes están acompañadas, además, por una selección de citas de referentes y estudiosos de la práctica fotográfica y por ensayos de autores de diversas disciplinas que las toman como punto de partida para desarrollar, a través de la escritura y cada uno a su modo, las artes de la observación.
+
+        </p>
+        <p class="my-2" style="opacity: 0.8; font-size: 1.2em;">
+          Los álbumes se suman al conjunto de materiales para la enseñanza ofreciendo una documentación y una reflexión desde la visualidad que intentan capturar las acciones propias de la vida escolar.
+        </p>
+        <p class="my-2" style="opacity: 0.8; font-size: 1.2em;">
+          Este álbum en particular ofrece registros del <strong>Instituto de Educación Superior "Simón Bolívar"</strong>, que fue “observado” fotográficamente atendiendo a las prácticas de lectura, los soportes de escritura que las posibilitan y los diversos espacios de la institución donde los lectores las realizan.  
+
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- SECCION REGISTROS FOTOGRAFICOS -->
+
+<div id="albumes" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-arena4 parallax" style="background-image: linear-gradient(to bottom, rgba(0, 38, 38, 0.2), rgba(4, 32, 16, 0.01)), url(img/Img_fondo_albumes.png); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 verdemusgo" style="margin: auto;">
+        <p class="h1 my-4">Registros fotográficos</p>
+
+      </div>
+    </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <div class="card-group">
+        <div class="card text-center bg-rosa2">
+          <a href="secuencia1.html"><img src="img\fotosIT3\1. PRÁCTICAS DE LECTURA\OPTIMIZADAS WEB\CARATULA1.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Prácticas de lectura</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-body-secondary">9 fotografías</small></p>
+          </div>
+          <div class="card-footer bg-transparent p-3">
+            <a href="secuencia1.html" class="btn bg-rosa3">Acceder</a>
+          </div>
+        </div>
+        <div class="card text-center bg-rosa2">
+          <a href="secuencia2.html"><img src="img\fotosIT3\2. ESPACIOS DE LECTURA\OPTIMIZADAS WEB\CARATULA3_ESPACIOS-DE-LECTURA.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Espacios de lectura</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-body-secondary">8 fotografías</small></p>
+          </div>
+          <div class="card-footer bg-transparent p-3">
+            <a href="secuencia2.html" class="btn bg-rosa3">Acceder</a>
+          </div>
+        </div>
+        <div class="card text-center bg-rosa2">
+          <a href="secuencia3.html"><img src="img\fotosIT3\3. SOPORTES PARA LA LECTURA\OPTIMIZADAS WEB\CARATULA2_SOPORTES-DE-LECTURA.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Soportes de escritura para la lectura</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-body-secondary">8 fotografías</small></p>
+          </div>
+          <div class="card-footer bg-transparent p-3">
+            <a href="secuencia3.html" class="btn bg-rosa3">Acceder</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row justify-content-center text-center my-4">
+        <div class="col-sm-10 my-4" style="margin: auto;">
+          <a href="img/fotosIT3/album3.zip" class="btn btn-secondary bg-azulino">Descargar álbum completo [10 MB]</a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<!-- SECCION ENSAYOS -->
+<div id="ensayos" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-lila">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-9 bordo" style="margin: auto;">
+        <p class="h1 my-4 arena4">Ensayos</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-10">
+    
+      <div class="card-group">  
+      <div class="card bg-rosa2 text-center">
+        <a href="ensayo6.html"><img src="img/fotosIT3/ensayistas/J_Melian.png" class="card-img-top" alt="..." style="width: 8em; margin: auto; margin-top: 2em; opacity: 0.8;"></a>
+        <div class="card-body">
+      <a class="azulino" href="ensayo6.html"><h5 class="card-title">Metamorfosis: la biblioteca renace en un espacio más amplio y moderno</h5></a>
+      <small class="text-body-secondary">Por Julio Melián</small>
+      <p style="padding: 1em; font-size: 0.9em;">El año 2014 marcó un antes y un después en la historia del Instituto de Formación Docente "Simón Bolívar". La inauguración de su nuevo edificio, en barrio San Vicente, revitalizó cada rincón de la institución, pero fue la biblioteca, con su luminoso y amplio espacio, la que se erigió como el corazón pulsante de este nuevo capítulo...</p>
+    </div>
+        <div class="card-footer bg-transparent p-3">
+          <a href="ensayo6.html" class="btn bg-naranja">Seguir leyendo</a>
+        </div>
+      </div>
+      <!-- ENSAYO 2 -->
+      <div class="card bg-rosa2 text-center">
+        <a href="ensayo2.html"><img src="img/fotosIT3/ensayistas/M_Almada.png" class="card-img-top" alt="..." style="width: 8em; margin: auto; margin-top: 2em; opacity: 0.8;"></a>
+        <div class="card-body">
+          <a class="azulino" href="ensayo2.html"><h5 class="card-title">Leer: un viaje hacia la memoria, una práctica de aprendizaje hacia el futuro</h5></a>
+          <small class="text-body-secondary">Por Magdalena González Almada y grupo de estudiantes</small>
+          <p style="padding: 1em; font-size: 0.9em;">La práctica de lectura no se compara con ninguna otra. Hay una magia que se produce cuando abrimos los libros y, cuando nos sumergimos en ellos, con frecuencia adquieren un valor emocional inigualable...</p>
+        </div>
+        <div class="card-footer bg-transparent p-3">
+          <a href="ensayo2.html" class="btn bg-naranja">Seguir leyendo</a>
+        </div>
+      </div>
+      <!-- ENSAYO 3 -->
+      <div class="card bg-rosa2 text-center">
+        <a href="ensayo3.html"><img src="img/fotosIT3/ensayistas/F_Ortiz.png" class="card-img-top" alt="..." style="width: 8em; margin: auto; margin-top: 2em; opacity: 0.8;"></a>
+        <div class="card-body">
+          <a class="azulino" href="ensayo3.html"><h5 class="card-title">Capas hojaldradas. En busca del tiempo no perdido en la formación de docentes de lengua y literatura</h5></a>
+          <small class="text-body-secondary">Por Florencia Ortiz</small>
+          <p style="padding: 1em; font-size: 0.9em;">Recibí la propuesta de sumarme a un proyecto vertebrado por un conjunto de fotografías enmarcadas en una búsqueda colectiva de sentidos sobre la formación docente...</p>
+        </div>
+        <div class="card-footer bg-transparent p-3">
+          <a href="ensayo3.html" class="btn bg-naranja">Seguir leyendo</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div style="margin-top: 2em;"></div>
+<div class="row justify-content-center">
+  <div class="col-sm-10">
+<!-- ENSAYO 4 -->
+  <div class="card-group">  
+  <div class="card bg-rosa2 text-center">
+    <a href="ensayo4.html"><img src="img/fotosIT3/ensayistas/M_Olmedo.png" class="card-img-top" alt="..." style="width: 8em; margin: auto; margin-top: 2em; opacity: 0.8;"></a>
+    <div class="card-body">
+      <a class="azulino" href="ensayo4.html"><h5 class="card-title">Biblioteca es el lugar para los libros que hace espacio a quienes leen</h5></a>
+    <small class="text-body-secondary">Por Marcio Olmedo Villalobo</small>
+    <p style="padding: 1em; margin: auto; font-size: 0.9em;">La acepción más obvia y tradicional de "libro" se refiere a una tecnología para la lectura en soporte de papel y tinta. Muchos libros hacen una biblioteca. Una biblioteca se llama así porque tiene libros y designa al conjunto de libros que la componen...</p>
+    </div>
+    <div class="card-footer bg-transparent p-3">
+      <a href="ensayo4.html" class="btn bg-naranja">Seguir leyendo</a>
+    </div>
+  </div>
+  <!-- ENSAYO 5 -->
+  <div class="card bg-rosa2 text-center">
+    <a href="ensayo5.html"><img src="img/fotosIT3/ensayistas/S_Carignano.png" class="card-img-top" alt="..." style="width: 8em; margin: auto; margin-top: 2em; opacity: 0.8;"></a>
+    <div class="card-body">
+      <a class="azulino" href="ensayo5.html"><h5 class="card-title">Los bordes que todo lo definen</h5></a>
+      <small class="text-body-secondary">Por Sebastián Carignano</small>
+      <p style="padding: 1em; font-size: 0.9em;">Leer la imagen. Este ensayo está diseñado para ser recorrido y navegado interactivamente: permite al espectador ampliar áreas, explorar lo que sucede en el interior y descubrir simbolismos y situaciones, algunas más evidentes que otras. Insinuar sin explicitar. La idea es que se deje llevar, sin necesidad de seguir un orden específico, disfrutando de la experiencia de una lectura inmersiva.</p>
+    </div>
+    <div class="card-footer bg-transparent p-3">
+      <a href="ensayo5.html" class="btn bg-naranja">Explorar</a>
+    </div>
+  </div>
+<!-- ENSAYO EN ESPERA
+  <div class="card bg-rosa2 text-center">
+    <a href="ensayo1.html"><img src="img/a_garcia.png" class="card-img-top" alt="..." style="width: 8em; margin: auto; margin-top: 2em; opacity: 0.8;"></a>
+<div class="card-body">
+          <a class="azulino" href="ensayo1.html"><h5 class="card-title">Ensayo de Diego</h5></a>
+        <small class="text-body-secondary">Por Diego García</small>
+        <p style="padding: 1em; margin: auto; font-size: 0.9em;">El presente trabajo se inscribe en una investigación en la que se indaga sobre los procesos de legitimación de las escuelas normales en Argentina a finales del siglo XIX...</p>
+        </div>
+
+    <div class="card-footer bg-transparent p-3">
+      <a href="ensayo1.html" class="btn bg-naranja">Seguir leyendo</a>
+    </div>
+  </div>
+ -->
+</div>
+</div>
+</div>
+
+
+<!-- espaciador 10vh --> 
+ <div class="row justify-content-center" style="min-height: 10vh;"></div>
+  </div>
+</div>
+
+<!-- BLOQUE FOTOGRAFO -->
+
+<div id="fotografo" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-azulino">
+  <div class="container-fluid" >
+    <div class="row justify-content-center">
+      <div class="col-sm-2 text-left">
+        <img src="img/fotosIT3/ensayistas/D_Battagliero.png" class="my-3 img-fluid" alt="" style="opacity: 0.8; width: 11em;">
+       </div>
+       <div class="col-sm-6">
+         
+        <h4 class="arena4">Fotógrafo</h4>
+        <p style="color: white"><strong>Diego Battagliero</strong> desde 1994 se desempeña como camarógrafo y fotógrafo. Es Técnico Productor en Medios Audiovisuales por la Universidad Nacional de Córdoba. Motivado por la relación entre la imagen y la realidad, la mirada subjetiva, lo que ve y lo que elige contar, trabaja desde hace 29 años como camarógrafo, director y director de fotografía en diferentes productoras y producciones independientes. Participó en la realización de largometrajes, cortometrajes, documentales, comerciales y realizaciones en TV para canal Encuentro, DeporTV, TV Pública, Canal 10 SRT, entre otros.</p>
+       </div>
+    </div>
+  </div>
+</div>
+
+<!-- BLOQUE BIBLIOGRAFIA -->
+
+<div id="bibliografia" class="jumbotron d-flex align-items-center min-vh-100 p-2 bg-bordo">
+  <div class="container-fluid" >
+    <div class="row justify-content-center">
+      
+       <div class="col-sm-8">
+        <h4 class="arena4">Bibliografía</h4>
+        <p style="color: white">
+          Chartier, R. (2022). <i>El pequeño Chartier ilustrado. Breve diccionario del libro, la lectura y la cultura escrita</i>. Editado por Pedro Araya y Yanko González. Buenos Aires: Ampersand.           
+        </p>
+       </div>
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- BLOQUE CRÉDITOS -->
+<div id="creditos" class="jumbotron d-flex min-vh-100 p-4 align-items-center bg-naranja parallax sans-serif" style="background-image: url(img/Img_fondo_footer.png); background-size: cover; background-position: center;">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 my-4">
+      </div>
+    </div>
+    <div class="row justify-content-center my-5">
+      <div class="col-sm-10">
+        <p class="h4">Agradecimientos</p>
+        <p>Queremos expresar nuestro agradecimiento a la exdirectora de la Dirección General de Educación Superior, Liliana Abrate, a su actual director, Ariel Zecchini, y a los supervisores del nivel, Carola Rodríguez, Claudia de la Fuente, Ernesto Olmedo y Silvana Romagnoli. También a los y las estudiantes, al personal docente y no docente del Instituto de Enseñanza Superior "Simón Bolívar", a su director, Rafael Herrera y a su vicedirector, Darío Martín Genovese,  por el acompañamiento para llevar adelante este proyecto. 
+      </p>
+      </div>
+    </div>
+      <div class="row justify-content-center my-5">
+      <div class="col-sm-10">
+        
+        <p class="h5">Autoría</p>
+        <p class="small">Fabián Iglesias y Mariana Schneider (compiladores)</p>
+          
+        <h5>Equipo de producción del álbum</h5>
+        <p class="small">Ensayistas: Diego García, Julio Melián, Magdalena González Almada, Gabriela Leguizamón, Angie Núñez, Florencia Alfonso, Daniela Bilche, Rosa Tolaba, Mariela Andrada, Elizabeth Peralta, Candelaria Fraile Geneste, Celeste Oliva, Natalia Gulowaty, Florencia Ortiz, Marcio Olmedo Villalobo y Sebastián Carignano<br>
+        Fotografía: Diego Battagliero<br>
+        Corrección literaria: Martín Schuliaquer y Juan Pablo Spinassi<br>
+        Diseño gráfico: Renata Malpassi y Paula Fernández<br>
+        Diseño web: Matías Rosini</p>
+
+
+          <h5>Serie de álbumes “Fotografías de escuelas: el arte de la observación”</h5>
+          <p>Una propuesta fotográfica que captura escenas en las instituciones educativas de formación docente y reflexiona pedagógicamente sobre ellas.<br>
+          Esta serie constituye un subproyecto de “Itinerarios en el tiempo. Una cartografía de la formación docente en Córdoba”.<br>
+        <a href="https://isep-cba.edu.ar/itinerarioseneltiempo" 
+   target="_blank" 
+   style="color:white; text-decoration:underline;">
+   https://isep-cba.edu.ar/itinerarioseneltiempo
+</a></p>
+          <p class="small"> Dirección: Adriana Fontana <br> Coordinación general: Luciana Cometto y Luciana Dadone <br> Coordinación del subproyecto “Fotografías de escuelas: el arte de la observación”: Fabián Iglesias y Mariana Schneider</p>
+          <hr class="my-5" style="color: arena4;"/>
+ 
+          <p>Cómo citar este material<br>Iglesias, F. y Schneider, M. (comp.) y equipos de producción del ISEP.  (2024). La biblioteca como espacio, el libro como soporte y la lectura como práctica. <em>Itinerarios en el Tiempo. Una cartografía de la formación docente en Córdoba.</em> Para el Instituto Superior de Estudios Pedagógicos, Ministerio de Educación de la Provincia de Córdoba.</p>
+         
+          
+          <p class="small">
+  <em>Este material está bajo una licencia Creative Commons (CC BY-NC 4.0)</em><br>
+  <img src="img/fotosIT3/cclogo.png" alt="Logo Creative Commons" style="width:60px; display:inline-block; margin-top:6px;">
+</p>
+
+
+          
+      </div>
+    </div>
+    <!-- TIRA DE LOGOS -->
+<section class="py-4">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-center align-items-end gap-4 logo-row-base">
+      
+      <div class="logo-container">
+        <img src="img/logos/Logo_Itinerarios01.png" alt="Itinerarios en el tiempo" class="logo-item logo-itinerarios">
+      </div>
+      
+      <div class="logo-container">
+        <img src="img/logos/Logotipo_ISEP.png" alt="ISEP" class="logo-item logo-isep">
+      </div>
+      
+      <div class="logo-container">
+        <img src="img/logos/Secretaria_Innovación01.png" alt="Secretaría de Innovación" class="logo-item logo-secretaria">
+      </div>
+      
+      <div class="logo-container">
+        <img src="img/logos/MinisterioEdu01.png" alt="Ministerio de Educación" class="logo-item logo-ministerio">
+      </div>
+      
+      <div class="logo-container">
+        <img src="img/logos/GobCba01.png" alt="Gobierno de Córdoba" class="logo-item logo-gobierno">
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .logo-row-base {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: end;
+      gap: 2.5rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: flex-end;
+      height: 150px;
+    }
+
+    .logo-item {
+      object-fit: contain;
+      width: auto;
+      max-height: 100%;
+    }
+
+    /* Ajustes individuales según proporciones reales */
+    .logo-itinerarios {
+      max-height: 120px;
+      margin-top: 30px;
+    }
+
+    .logo-isep {
+      max-height: 110px;
+      margin-top: 40px;
+    }
+
+    .logo-secretaria {
+      max-height: 115px;
+      margin-top: 35px;
+    }
+
+    .logo-ministerio {
+      max-height: 120px;
+      margin-top: 30px;
+    }
+
+    .logo-gobierno {
+      max-height: 130px;
+      margin-top: 20px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .logo-container {
+        height: 100px;
+      }
+
+      .logo-item {
+        max-width: 90px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .logo-row-base {
+        gap: 1.5rem;
+      }
+
+      .logo-container {
+        height: 80px;
+      }
+    }
+  </style>
+</section>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div> 
+
+
+
+
+</div>  <!--termina contenido central-->
+
+<script src="scripts.js"></script> 
+</body>
+</html>

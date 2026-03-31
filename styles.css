@@ -1,0 +1,574 @@
+
+/* FUENTES */
+
+@font-face {
+	font-family:"alegre";
+	font-style:normal;
+	font-weight:400;
+	src: url("fonts/Alegreya-Regular.ttf");
+}
+
+@font-face {
+	font-family:"alegre-medium";
+	font-style:normal;
+	font-weight:500;
+	src: url("fonts/Alegreya-Medium.ttf");
+}
+
+@font-face {
+	font-family:"alegre-semibold";
+	font-style:normal;
+	font-weight:600;
+	src: url("fonts/Alegreya-SemiBold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-bold";
+	font-style:normal;
+	font-weight:bold;
+	src: url("fonts/Alegreya-Bold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-extrabold";
+	font-style:normal;
+	font-weight:800;
+	src: url("fonts/Alegreya-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family:"alegre-black";
+	font-style:normal;
+	font-weight:bolder;
+	src: url("fonts/Alegreya-Black.ttf");
+}
+
+
+@font-face {
+	font-family:"alegre-regular-italic";
+	font-style:italic;
+	font-weight:400;
+	src: url("fonts/Alegreya-Italic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-medium-italic";
+	font-style:italic;
+	font-weight:500;
+	src: url("fonts/Alegreya-MediumItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-semibold-italic";
+	font-style:italic;
+	font-weight:600;
+	src: url("fonts/Alegreya-SemiBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-bold-italic";
+	font-style:italic;
+	font-weight:bold;
+	src: url("fonts/Alegreya-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-extrabold-italic";
+	font-style:italic;
+	font-weight:800;
+	src: url("fonts/Alegreya-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+	font-family:"alegre-black-italic";
+	font-style:italic;
+	font-weight:bolder;
+	src: url("fonts/Alegreya-BlackItalic.ttf");
+}
+
+
+/* PALETA */
+
+.gris {color: #787878;}
+.azulino {color: #476679}
+.bordo {color: #7a4654;}
+.naranja {color: #ee7a54;}
+.beige {color: #e1cfab;}
+.verdeagua {color: #a1d1cb;}
+.verdemusgo {color: #4e5c5a;}
+
+.bg-bordo {background-color: #7a4654;}
+.bg-naranja {background-color: #ee7a54;}
+.bg-beige {background-color: #e1cfab;}
+.bg-verdeagua {background-color: #a1d1cb;}
+.bg-verdemusgo {background-color: #4e5c5a;}
+.bg-azulino {background-color: #476679;}
+.bg-lila {background-color: #878292;}
+
+/* PALETA EXTENDIDA */
+
+.lila1 {color: #7582b6;}
+.lila2 {color: #a19bb5;}
+.rojo {color: #a86763;}
+.rosa {color: #bf9098;}
+.rosa2 {color: #E7CDC6;}
+
+.azul1 {color: #3e618b;}
+.azul2 {color: #9dc3e7;}
+.azul3 {color: #9dc3e7;}
+.azul4 {color: #96a2ae;}
+.azul5 {color: #d3d3db;}
+
+.arena1 {color: #c99e2d;}
+.arena2 {color: #aa9173;}
+.arena3 {color: #cfaf80;}
+.arena4 {color: #f4ead9;}
+
+.verde1 {color: #6c734a;}
+.verde2 {color: #889770;}
+
+.bg-lila1 {background-color: #7582b6;}
+.bg-lila2 {background-color: #a19bb5;}
+.bg-rojo {background-color: #a86763;}
+.bg-rosa {background-color: #bf9098;}
+.bg-rosa2 {background-color: #E7CDC6;}
+.bg-rosa3 {background-color: #EF7D5A;}
+
+.bg-azul1 {background-color: #3e618b;}
+.bg-azul2 {background-color: #9dc3e7;}
+.bg-azul3 {background-color: #9dc3e7;}
+.bg-azul4 {background-color: #96a2ae;}
+.bg-azul5 {background-color: #d3d3db;}
+
+.bg-arena1 {background-color: #c99e2d;}
+.bg-arena2 {background-color: #aa9173;}
+.bg-arena3 {background-color: #cfaf80;}
+.bg-arena4 {background-color: #f4ead9;}
+
+.verde1 {background-color: #6c734a;}
+.verde2 {background-color: #889770;}
+
+
+
+.bg-grisclaro {background-color: #efefef;}
+.bg-beige {background-color: #f4ead9;}
+.bg-naranja {background-color: #ee7a54; color:white;}
+
+.boton-naranja {background-color: #ee7a54; color:white;}
+.boton-naranja:hover {background-color: #7a4654; color:white;}
+
+
+/* ESTILOS TEXTO */
+
+
+.ensayo a {color:#ee7a54;}
+
+.piedefoto {color: grey; font-style: italic; text-align: center; position:relative; z-index: 3;}
+
+.titulo {font-family: "alegre-medium"; font-size: 2.8em;}
+
+p, li {font-size: 1.1em;}
+
+
+
+body {font-family: "alegre";}
+
+.sans-serif {font-family: "alegre"; font-weight: 100;}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* GALERIA DE FOTOS Y THUMBNAILS */
+
+.foto { 
+  width: 100%;
+}
+
+.miniatura { 
+  opacity: 60%;
+  margin: 0.3em;
+  height: 8em;
+}
+
+.miniatura:hover { 
+  opacity: 100%;
+}
+
+
+/* BOTONES FIJOS */
+
+#botongrilla {
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.6;
+}
+
+#botongrilla img {
+height: 2.5em;
+}
+
+#logoisep {
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  opacity: 0.7;
+  
+}
+
+#logoisep img {
+height: 3.5em;
+}
+
+
+/* ELEMENTOS MODAL (solo se usó en ensayo3.html) */
+
+.modal-title {
+  color: #4e5c5a;
+  }
+
+
+/* MENÚ LATERAL */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #476679; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* ENLACES DEL MENÚ */
+.sidenav a {
+  padding: 18px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ee7a54;
+}
+
+/* Posición y estilo del botón cerrar (esquina superior derecha) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Estilo página de contenido - si se usa el push a la derecha al abrir */
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+.card-img-top {opacity:0.85;}
+.card-img-top:hover {opacity:1;}
+
+/* EFECTO REVELADO */
+
+@keyframes fadein { 
+  0% {
+    filter: brightness(0);
+    background-color: black;
+
+  }
+
+  25% {
+    filter: brightness(0);
+    background-color: black;
+
+  }
+
+  100% {
+    filter: brightness(1);
+    background-color: black;
+
+  }
+}
+
+.botontransparente {
+    background-color: transparent;
+    border-width: 0px;
+    width: 100%;
+    height: 100%;
+ }
+
+ .tapa1 {
+    background-image: url(img/fotos/01-recortes.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s;
+    z-index: 1;
+ }
+
+ .fondo1 {
+    background-image: url(img/fotos/01.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: fadein 3s;
+
+ }
+
+
+ .tapa2 {
+  background-image: url(img/fotos/29-recortes.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: opacity 2s;
+  z-index: 1;
+}
+
+.fondo2 {
+  background-image: url(img/fotos/29.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: fadein 3s;
+
+}
+
+.tapa3 {
+  background-image: url(img/fotos/42-recortes.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: opacity 2s;
+  z-index: 1;
+}
+
+.fondo3 {
+  background-image: url(img/fotos/42.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: fadein 3s;
+
+}
+
+
+/* ICONO SCROLL MOUSE */
+
+ .mouse-move {
+  position: absolute;
+  max-width: 70px;
+  bottom: 25px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  animation: mouse-move 1.5s linear infinite;
+  z-index: 2;
+}
+
+@keyframes mouse-move {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  12.5%,
+  37.5% {
+    transform: translateY(3px);
+  }
+
+  25% {
+    transform: translateY(8px);
+  }
+}
+
+
+
+/* SCROLL SNAP desactivado 
+
+.scroll {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.seccion {
+  scroll-snap-align: start none;
+  scroll-margin-block: 10px;
+}
+
+*/
+
+
+/* BARRA DE PROGRESO GENERAL */
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f4ead9;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #f4ead9;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #ee7a54;
+    width: 0%;
+  }
+
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
+
+  .botonhover:hover {
+    transform: scale(1.15);
+  }
+
+
+/* EFECTO DE ALBUM DE FOTOS */
+
+.esquinas {
+  position: relative;  
+  display: table;
+  max-width: 100%;
+  margin: 1em auto;
+}
+.esquinas img {
+  display: table-cell;
+  max-width:100%;
+  height: auto;
+  max-height: 95vh;
+  margin: 0 auto;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 0 0.2em #00000055;
+  box-sizing: border-box;
+}
+.esquinas:before,
+.esquinas:after,
+.esquinasbis:before,
+.esquinasbis:after {
+  position: absolute;
+  bottom: -20px;
+  right: -40px;
+  content: "";
+  height: 40px;
+  width: 80px;
+  background: #fff; /* Same color that wrapper background */
+  box-shadow: 0 -6px 9px -8px #333;
+  transform: rotate(-45deg);
+}
+.esquinas:after,
+.esquinasbis:after {
+  top: -20px;
+  left: -40px;
+  box-shadow: 0 6px 9px -8px #333;
+}
+.esquinasbis:before { 
+  top: auto;
+  left: -40px;
+  transform: rotate(45deg);
+}
+.esquinasbis:after {
+  left: auto;
+  right: -40px;
+  transform: rotate(45deg);
+}
+
+.caption-esquinas{
+  margin-left: inherit;
+}
+
+
+
+.esquinas2 {
+  position: relative;  
+  display: table;
+  max-width: 100%;
+  margin: 1em auto;
+}
+.esquinas2 img {
+  display: table-cell;
+  max-width:100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 0 0 0.2em #00000055;
+  box-sizing: border-box;
+}
+.esquinas2:before,
+.esquinas2:after,
+.esquinas2bis:before,
+.esquinas2bis:after {
+  position: absolute;
+  bottom: -20px;
+  right: -40px;
+  content: "";
+  height: 40px;
+  width: 80px;
+  background: #f4ead9; /* Same color that wrapper background */
+  box-shadow: 0 -6px 9px -8px #333;
+  transform: rotate(-45deg);
+}
+.esquinas2:after,
+.esquinas2bis:after {
+  top: -20px;
+  left: -40px;
+  box-shadow: 0 6px 9px -8px #333;
+}
+.esquinas2bis:before { 
+  top: auto;
+  left: -40px;
+  transform: rotate(45deg);
+}
+.esquinas2bis:after {
+  left: auto;
+  right: -40px;
+  transform: rotate(45deg);
+}
+
+.caption-esquinas{
+  margin-left: inherit;
+}
+
+
+/* GALERIA DE FOTOS */
+
+
+.flex-column {
+  max-width: 260px;
+}
+
+.gal img {
+  margin: 5px;
+}
+
+.scale {
+  transform: scaleY(1.05);
+  padding-top: 5px; 
+}
+

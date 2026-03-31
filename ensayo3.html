@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="bg-arena4">
+
+
+  <div id="mySidenav" class="sidenav" style="z-index: 2;">
+    <a href="javascript:void(0)" style="font-size:3em;" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html#portada" target="">Inicio</a>
+    <a href="index.html#presentacion" target="">Presentación</a>
+    <a href="index.html#albumes" target="">Registros fotográficos</a>
+    <a href="index.html#ensayos" target="">Ensayos</a>
+    <a href="index.html#fotografo" target="">El fotógrafo</a>
+    <a href="index.html#bibliografia" target="">Bibliografía</a>
+    <a href="index.html#creditos" target="">Créditos</a>
+  </div>
+  
+  <!-- MOSCA ISEP -->
+  <a href="https://isep-cba.edu.ar/web/itinerarios-en-el-tiempo/" class="botonhover" target="_blank" id="logoisep"><img src="img/logos/logo-mosca.png" alt=""></a>
+
+  <!-- MENU -->
+  <img src="img/menu-icon.svg" class="botonhover" style="position:fixed; z-index:1; top:30px; right: 30px; opacity:0.7; height: 3em; background-color: #00000055; border-radius: 5px;" onclick="openNav()"/>
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+
+<!-- PROGRESS BAR -->
+<nav style="position: fixed; bottom: 0; z-index: 1; width: 100%; padding: 0px;" class="navbar bg-body-tertiary">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</nav>
+<!-- ENCABEZADO ENSAYOS -->
+
+<div id="portada" 
+     class="jumbotron d-flex align-items-center parallax" 
+     style="height: 50vh; 
+            background-image: linear-gradient(to bottom, rgba(0, 38, 38, 0.2), rgba(4, 32, 16, 0.01)), url(img/Img_fondo_encabezado.png); 
+            background-size: cover; 
+            background-position: center;">
+</div>
+
+<!-- CONTENIDO -->
+  <div class="container content ensayo">
+
+    <!-- TÍTULO Y ENCABEZADO -->
+  <div class="row justify-content-center">
+    <div class="col col-xl-8">
+      <h1 class="bordo" id="titulo">Capas hojaldradas. En busca del tiempo no perdido en la formación de docentes de lengua y literatura</h1>
+      <p class="gris my-5" style="text-align: right;">por <a class="naranja" href="#bio">Florencia Ortiz</a></p>
+      </div>
+    </div>
+
+    <!-- FILA DE TEXTO -->
+    <div class="row justify-content-center">
+      <div class="col col-xl-8">
+        <p>
+          Recibí la propuesta de sumarme a un proyecto vertebrado por un conjunto de fotografías enmarcadas en una búsqueda colectiva de sentidos sobre la formación docente. En tanto primera “valla”, la invitación a escribir un ensayo a partir de ellas implica aceptar este universo acotado de imágenes como una puerta abierta a un juego reflexivo que, sin dejar de anclarse en primera persona, permita el ingreso de voces especialistas e ilumine problemáticas de una memoria colectiva y las tensiones del presente. Este es mi “trampolín”: acepto el desafío de un trabajo con la lengua escrita e imagino que soy una intérprete de las fotos elegidas que acepta poner en marcha su poder connotativo, su capacidad para traducir un enigma, algo que está y no está a la vista. Pero ahí empieza el verdadero juego al que nos lanza esta invitación: hilar en primera persona los aportes de quienes nos ocupamos de la formación docente de un campo específico, el de la enseñanza de la literatura, amplificando el infinito resplandor de los sentidos y experiencias de quienes transitan y transitaron las aulas del Instituto "Simón Bolívar".
+        <br>
+        
+          La espacialidad y la materialidad de lo retratado son dos ejes que permiten trazar coordenadas para pensar cómo inciden los soportes de la lectura y de la escritura en las diversas prácticas áulicas y extraáulicas de la formación de profesores y profesoras. Intento detenerme en ambas, pero cada foto es una flecha que señala hacia distintas direcciones temporales. Los libros, los estantes, los papeles, los pizarrones, las mesas, los bancos y las pantallas emanan una memoria colectiva y son señales del dinamismo de los procesos sociales e históricos de las prácticas de leer y escribir en las escuelas. La cultura material de sus espacios encarna una historia singular que queda subsumida por el imperio de lo discursivo. Es posible advertir en estas fotos sedimentos de viejos hábitos y rutinas, sus metamorfosis y sus pervivencias. El álbum de fotos que tengo frente a mí tiene tres secciones y me entrego a un pacto con la escritura: la línea que divide lo real de lo ficcional se esfuma a medida que hacemos ingresar, imaginariamente, a quienes trabajaron o estudiaron en esos espacios, quienes aún los habitan y quienes siguen resonando en las hojas de papel y en las pantallas luminosas.
+        <br>
+        
+          Cada foto es una capa de tiempos superpuestos. Cada imagen es una interrupción y nos traslada a un momento irrepetible: “Lo que la fotografía reproduce al infinito únicamente ha tenido lugar una sola vez: la fotografía repite mecánicamente lo que nunca más podrá repetirse existencialmente” (Barthes, 1989, pp. 28-29).
+        </p>
+         <p>
+          <h4 class="bordo my-2">
+          1.
+        </h4>
+        </p>
+        <p>
+          <!-- MODAL FOTO 11 -->
+           (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto11" class="isep-popover">
+  11
+</a>) El libro está abierto sobre un fondo apenas iluminado que deja ver las vetas de la madera. El tiempo ha impregnado las hojas de un amarillo que se cae hacia el marrón del segundo plano. Puedo evocarlo, pero me pregunto: ¿por qué no existe en nuestro diccionario una palabra que designe al olor de las páginas de los libros viejos? 
+La fotografía capturó el momento en el que unas manos sacaron a este manual de su silenciosa quietud de estante y lo dejaron abierto allí donde unos pequeños papeles marcaron ¿una pausa? Ese fino movimiento de abrir el libro antiguo dejó a la vista un marcador que me sorprende por el trazo a mano de unas frases escritas en redondeada cursiva. El foco y la luz solo permiten leer con nitidez algunas palabras que anotó una profesora con “letra de maestra”. Tendemos a pensar que esa caligrafía prolija y artesanal es una habilidad femenina (¿es un estereotipo o un indicio de prácticas de escritura de otras épocas?). Esas pistas nos dicen que ha enseñado “las rimas” (contenido propio de la retórica y la preceptiva literaria) y que ha utilizado el libro de Nicolás Bratosevich como material didáctico (sus manuales fueron referentes obligados desde los años 60 hasta los años 90 en nuestro país). Entre otros temas que pertenecen a “las bolillas 7 y 8”, sus clases incluyeron al <em>Cantar de Mio Cid</em>, el poema épico en lengua castellana del siglo XII. El papelito que sobrevivió al paso de los años ofició alguna vez de organizador de una jornada escolar y de brújula para no naufragar entre los tiempos áulicos, que siempre son escasos cuando el programa anual de la materia abarca un arco de “grandes obras” que atraviesa varios siglos.
+        <br>
+        
+          La reminiscencia no me pide permiso y, al evocar estos contenidos, viene a mí la figura de una profesora que nos exigía, a los ingresantes universitarios y universitarias, fichas manuscritas con resúmenes de los manuales de historia y crítica literaria. He olvidado las fechas de las biografías de autores y los años de las ediciones de las “grandes obras”, así como las largas listas de títulos que memorizábamos para rendir Literatura Española I en la carrera de Letras Modernas; pero sí conservo vivo el recuerdo de su calidez y del trato afectivo para explicar y acompañarnos en las altas exigencias del estudio que demandaba la Educación Superior. Mi biografía estudiante se filtra por el lente.
+        </p>
+        <!-- MODAL FOTO 8  -->
+        <p>(Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto8" class="isep-popover">
+  8
+</a>) Quizás aquella misma profesora que enseñó el Mio Cid y las rimas subrayó con resaltador verde en otro manual las “ideas principales” del párrafo enfocado: “<em>Martín Fierro</em> de José Hernández” y “el canon insustituible”.
+<!-- MODAL FOTO 14  -->
+        
+          En este otro caso (foto<a href="#" data-bs-toggle="modal" data-bs-target="#foto14" class="isep-popover">
+  14
+</a>), a lo mejor fue un estudiante quien necesitó escribir con fibra roja en el margen de la caja del texto los nombres de dos representantes del romanticismo europeo: “Goethe y Schiller”. Tuvo que escribirlos mientras leía, porque los nombres y apellidos de los “genios” alemanes no le resultaban fáciles de memorizar: demandaban una atención especial por su difícil lectura, pronunciación y grafía.
+        <br>
+        
+        
+          El conocimiento escolar de la literatura desde su sociogénesis estuvo atravesado por múltiples disputas: científicas, curriculares y didácticas; culturales y políticas. Quienes investigaron la historia de este campo disciplinar contribuyeron a reconstruir algunos de los hitos fundadores de una tradición que se remonta a los orígenes del sistema educativo en nuestro país. Sus aportes nos permiten comprender la supervivencia, durante largas décadas, de un paradigma escolar literario enciclopedista encarnado, principalmente, en el manual como género de transmisión escolar de un canon, entendido como un corpus universal despojado del componente ideológico que subyace a cualquier proceso de jerarquización al interior de una cultura.
+        <br>
+        
+          Los manuales, estos libros voluminosos, fueron vehículos privilegiados para la consideración de ciertos textos literarios como “bellas letras”, que servían de referentes de escritura (modelos del “buen decir”) e instrumentos de disciplinamiento y control social para imponer moldes, pautas y otros códigos sociales vinculados con roles de género, pautas de urbanidad, entre otros. En el caso de la literatura argentina, los “libros de texto” contribuyeron a crear un canon de autores como herramienta fundamental de introducción a la cultura nacional desde una visión política y estética sesgada por la homogeneidad, el monolingüismo y la negación de la diversidad identitaria de nuestro territorio. Durante la última dictadura cívico-militar en Argentina, los manuales, bajo este paradigma, formaron parte de un plan sistemático de censura y represión a la cultura que intentó uniformar el modo de pensar y aniquilar los cuerpos y las expresiones de la disidencia a través de prohibiciones de títulos, persecuciones y desapariciones de personas vinculadas con todo el circuito editorial.
+        <br>
+        
+          Durante el siglo XX y hasta la reforma educativa de los años 90 en nuestro país, la literatura en la escuela secundaria fue concebida como una historia literaria, y el manual fue el “museo” de autores (predominantemente varones) y de textos no contemporáneos (Bombini, 2015). Estos libros no solo dejaban afuera otras zonas del sistema literario y otras lenguas, sino que operaban como modelizadores de una lectura: la “correcta”. La renovación curricular acaecida desde la Ley de Educación Nacional (2006) estuvo enmarcada en una serie de políticas educativas que hicieron posible una inversión estatal que permitió la llegada de manuales de editoriales de larga trayectoria con propuestas alternativas, así como grandes dotaciones de libros de literatura y de ciencias que alimentaron las estanterías de las bibliotecas de todo el sistema educativo. 
+          
+          <!-- MODAL FOTO 21  -->
+          (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto21" class="isep-popover">
+  21
+</a>) Como calles de una ciudad florecida, en la que conviven la tradición y la innovación. ¿En qué inventario imperceptible quedaron grabadas las huellas digitales de quienes interactuaron con estos libros? ¿Cuántas marcas en lápiz, birome o marcadores –cual semáforos– detuvieron la marcha de lectores ávidos de interpretaciones previas?  
+        <br>
+        
+          En estas tres fotografías, el “punctum” (Barthes, 1989) no son los manuales de literatura en sí mismos, omnipresentes aún en las bibliotecas escolares, sino las distintas señales que han dejado lectores o lectoras de otras épocas en las páginas impresas. Los sentidos me punzan y se expanden en ondas expansivas hacia varias capas de tiempos superpuestos: el que eslabona las obras del canon literario en un único volumen (un invisible encadenamiento que legitima y otorga autoridad a una selección de textos), el de la política pública y sus leyes, el de la planificación docente y su lógica expandida en el ciclo lectivo, el de cada clase irrepetible en la que se repasaron estos contenidos para una evaluación posterior, el del contexto político en el que se dictaron estas materias y estas carreras. Pero también los tiempos de quienes escucharon las exposiciones orales que complementaron las palabras del manual, quienes estudiaron, memorizaron y aprobaron exámenes hasta llegar a tener el título de profesores de Lengua y Literatura. Tiempos subjetivos que impregnaron de significados personales y desviaron el peso de las tradiciones y del círculo cerrado del enciclopedismo hacia lo no previsto y lo disruptivo de la experiencia escolar situada. Entre capa y capa, entre estantes y aulas, se colaron pasiones lectoras, olvidos, resistencias y otros pactos de lectura “levantando la cabeza” (Barthes, 1994) en los que el deseo impregnó las escenas y dejó su semilla.
+        </p>
+                 <p>
+          <h4 class="bordo my-2">
+          2.
+        </h4>
+        
+        <p style="text-align: right;">
+  “¿Qué son las palabras acostadas en un libro? ¿Qué son esos símbolos muertos? Nada absolutamente.<br> ¿Qué es un libro si no lo abrimos? Es simplemente un cubo de papel y cuero, con hojas; <br>pero si lo leemos ocurre algo raro, creo que cambia cada vez” <br>(Borges, 2010, p. 18).
+</p>
+        <!-- MODAL FOTO 16  -->
+
+        <p>
+          (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto16" class="isep-popover">
+  16
+</a>) El libro es un hojaldre de páginas salpicadas de signos negros. Un libro es un objeto que se puede rozar, acariciar, atesorar o quemar; es un guardián del tiempo, un gladiador contra el olvido y un objeto de consumo. Es la perdición para los bibliófilos y un objeto inaccesible por su costo para grandes capas de nuestra sociedad. Se emparienta a sus hermanos por su fragilidad —el códice, los rollos de papiro, el pergamino y las tablillas—; pero, a diferencia de ellos, no ha sido aún superado. Aunque lo hayamos olvidado, su ADN pertenece a los árboles. Los libros, esos raros objetos que nos anudan, cosiéndonos a un tapiz invisible por donde nuestras vidas encuentran sentidos, combinan dos modos de ser y de estar en este plano de nuestra existencia. 
+        <br>
+        
+          A pesar de recurrir permanentemente a la misma palabra para nombrarlo, la historia de la lectura y de los libros nos recuerda que no hay estabilidad de sentido de los mismos objetos o de las mismas prácticas cuando cambian los contextos en que estas prácticas son llevadas a cabo. Por eso, el estudio de las discontinuidades culturales (Chartier, 1999) previene cualquier intento de universalizar la lectura o de pensarla como una actividad independiente de un tiempo y un espacio. 
+        <br>
+        <!-- MODAL FOTO 10  -->
+        
+          (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto10" class="isep-popover">
+  10
+</a>) Una lectora retratada a la distancia, que lee desde un dispositivo iluminado, es alguien que ha logrado sortear una frontera, la de su propio tiempo presente. ¿Está leyendo en soledad?
+        </p>
+        
+                
+        
+        <p style="text-align: right;">
+           “Cuando leemos, enseñamos, escribimos o ayudamos a otros a leer, enseñar o escribir, las palabras nos vinculan al mismo tiempo a lo individual y a lo social, porque la lectura es, además de aquella práctica solitaria y exquisita (…) un instrumento de intervención sobre el mundo que nos permite pensar, tomar distancia, reflexionar” <br>(Andruetto, 2015, pp. 110-111).</p>
+
+<p>Los y las jóvenes que eligen estudiar para dedicarse al oficio de enseñar a leer y a escribir han tenido quizás una vivencia singular –única e irrepetible–, profundamente subjetivante, con alguna mediadora, o en una biblioteca con algún libro o lectura. El paso del tiempo ha hecho madurar sus deseos que se han convertido en frutos. Se han preguntado a sí mismos: ¿qué quiero estudiar? Y han tomado una decisión. Han apostado por un futuro laboral y profesional y, por lo tanto, se ha colado algún fragmento de la vida pasada, un relato de sí mismos para poder tejer un nuevo camino profesional y vital. El recorrido que las instituciones formadoras brindan, ¿podrá recuperar esa chispa que se encendió para alentar a que futuros y a futuras docentes mediadores y mediadoras se piensen como promotores de lectura? ¿Cuántas capas de prejuicios y representaciones peyorativas sobre quienes se perciben “poco lectores o lectoras” se pondrán en jaque durante el paso por las aulas del profesorado?<br>
+
+
+        <!-- MODAL FOTO 24  -->
+        
+          (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto24" class="isep-popover">
+  24
+</a>) La lectora ha elegido un rincón de la cantina durante una hora libre para poder concentrarse en una consigna que le exige una interpretación personal de un artículo, así como un tiempo del cual no dispone en su hogar. Las investigaciones sociológicas discuten enfoques cuantitativos, cuyos supuestos parten de una concepción modélica de la lectura, caracterizada por la acumulación cuantitativa, sin importar el ritmo ni la forma (Bahloul, 2002).
+        </p>
+        <h4 class="bordo my-2">
+          3.
+        </h4>
+        </p>
+        <!-- MODAL FOTO 7  -->
+         <p>
+          (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto7" class="isep-popover">
+  7
+</a>) Las y los estudiantes han llegado en colectivo hasta el cementerio San Jerónimo de Córdoba. Se juntaron en la puerta y de allí caminaron mientras escuchaban la voz del guía, tomaron apuntes, usaron sus celulares como grabadores y comentaron la noticia del día entre las pausas del paseo. En esta foto, se han detenido a escuchar al bibliotecario, conocedor de historias locales cifradas en el icónico rincón de la ciudad. Su voz y sus gestos recuperan nombres propios de leyendas urbanas, de anónimos y de héroes poco conocidos, integrando en su discurrir las lecturas previas de autores y autoras leídos en las aulas del profesorado. Hace frío, pero el sol entibia el aire que corre por las calles internas, mientras resuenan las voces de los muertos que hablan a través de las lápidas y de los panteones.
+        </p>
+        
+        <!-- MODAL FOTO 5 / 18 / 2 -->
+         <p>
+          (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto5" class="isep-popover">
+  5
+</a>) El bibliotecario ha enmarcado la salida didáctica en un proyecto que involucra una serie de acciones previas ocurridas en una diversidad de escenarios: en la sala de la biblioteca (foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto18" class="isep-popover">
+  18</a>), en las aulas, en los pasillos (foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto2" class="isep-popover">2</a>) y, quizás también, en el patio debajo de las hojas de los árboles. Entre esas decisiones, ha resultado clave el convite de una mesa de libros de la biblioteca, dispuestos de tal modo que cada estudiante se ve invitado a “servirse” un libro. Podemos reconstruir ese instante en el que ese grupo de adultos y adultas se ponen de pie (las sillas hacen ese ruido característico al rozar el piso), rodean las mesas desbordantes, escuchan una presentación del porqué y del para qué de esta selección de textos, se dejan llevar por lo que les ofrecen las tapas y las contratapas, leen un párrafo inicial, eligen uno, lo devuelven, lo intervienen o escriben algo en su cuaderno, lo recomiendan a su compañera y así... Un encadenamiento de microacciones para las que hay que desplegarse en el espacio, moverse, sacudir la rutina y dejarse llevar por el banquete de libros. Hay un tiempo destinado a la lectura individual y silenciosa, con los libros en la mano, hay momentos para socializar las impresiones en grupo y, entrelazando ambos, se cocina el clima para encender ese relámpago: la curiosidad por conocer una historia que, entre luces y sombras, se va haciendo propia y colectiva.
+        </p>
+         <!-- MODAL FOTO 6 -->
+         <p>
+          (Foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto6" class="isep-popover">
+  6</a>) Un estudiante hojea el libro que eligió mientras escucha al mediador, que retoma las impresiones de lo vivido en la visita al cementerio. Su cuerpo está levemente inclinado hacia adelante porque lee mientras se cuelan las resonancias de la salida grupal, y ahora se amalgaman con las palabras en letras de molde de Mariano Saravia.<br>
+        
+          Estas fotos muestran aulas porosas, móviles e inquietas. Escenarios que habilitan múltiples modos de leer con los sentidos, más allá de la dimensión intelectual y cognitiva que exige la cultura escrita. Se lee con todo el cuerpo; se leen, con otros y otras, relatos o fragmentos de relatos cifrados en las inscripciones de las piedras talladas, en los bronces bruñidos, en los carteles, en las páginas web consultadas, y en los libros que abren la llave de la memoria de una historia que está viva porque se hace propia. Leer con otros y otras —desde el celular, con la fotocopia o con el libro físico, en cuadernillos anillados o en otros artefactos fabricados por sus docentes (Falconi, 2023)— es una opción válida cuando el tiempo y el espacio compartido en la escuela es una oportunidad para poner entre paréntesis otras demandas y el poder de los algoritmos que atacan desde las redes sociales. La lectura es una práctica inherente al estudio que se entreteje con otras, propias de la formación superior: adultos y adultas que, además de estudiar, trabajan y se ocupan de crianzas y de cuidados, que sostienen redes interpersonales y otras responsabilidades en contextos complejos y desesperanzadores.
+        <br>
+        
+          Durante largos siglos, los libros circularon en manos de muy pocos. El desafío compartido en las aulas del profesorado del presente sigue siendo formar ciudadanos y ciudadanas de la cultura escrita para lograr que estudiantes de todo el sistema educativo formal lleguen a ser miembros plenos de la comunidad de lectores y escritores. Ese sentido democratizador de la educación y las múltiples alfabetizaciones que las nuevas tecnologías demandan siguen siendo objetos de disputas en tanto suelen apegarse al plano discursivo de normativas, leyes y prescripciones curriculares; sin embargo, queda deslucido al enfrentar las condiciones materiales de los edificios y mobiliarios, el acceso igualitario a los bienes culturales, así como las condiciones laborales de las y los docentes como trabajadores asalariados. El paso por el profesorado de jóvenes, adultos y adultas, ¿podrá contribuir a visibilizar estas tensiones y conflictos? La formación de profesionales críticos y de un sistema educativo que reproduce brechas de desigualdades estará ligada a modos personales y colectivos de construir conocimientos y reflexiones complejas para renovar los argumentos políticos y pedagógicos de un verdadero proyecto alfabetizador transformador.
+        </p>
+         <h4 class="bordo my-2">
+          4.
+        </h4>
+        </p>
+        <!-- MODAL FOTO 9 / 20 / 2 -->
+        <p>
+           (Fotos <a href="#" data-bs-toggle="modal" data-bs-target="#foto9" class="isep-popover">
+  9</a>, <a href="#" data-bs-toggle="modal" data-bs-target="#foto20" class="isep-popover">
+  20</a> y <a href="#" data-bs-toggle="modal" data-bs-target="#foto2" class="isep-popover">
+  2</a>) Las alumnas están trabajando en grupo, sentadas en ronda en el piso o alrededor de los bancos, de modo tal que pueden escucharse unas a la otras y discutir los sentidos de un texto literario en cuestión, inundando los signos impresos y digitales con sus preguntas y tirando redes hacia otros textos. Han salido del aula a buscar un ambiente menos ruidoso y más luminoso, en el que el hilo de la conversación vaya y venga, vuelva a enredarse entre comentarios, citas, anotaciones. Una de ellas lee el texto desde su celular; las otras anotan frases y palabras clave en sus cuadernos. Mates de por medio, protagonizan una conversación capaz de sacudir los mecanismos perezosos (Eco, 1987) de un relato literario que dice más por lo que oculta o sugiere que por lo que exhibe. <br>
+           ¿Cómo conviven las distintas lecturas cuando un aula de nivel Superior abre el juego a lo colectivo? En un movimiento circular y de tránsito intenso, los sentidos construidos activan la polisemia de un relato quizás policial, quizás romántico. Las manos en movimiento de la estudiante que está hablando (foto <a href="#" data-bs-toggle="modal" data-bs-target="#foto9" class="isep-popover">
+  9</a>) condensan un colectivo de verbos que intensifican la fuerza de lo grupal: dialogar, aprender, explorar, interrogarse, confrontar, disentir y compartir.<br>
+           Compartir un espacio y un tiempo en común resulta una condición irremplazable para el encuentro de constelaciones de sentidos anidados en las pantallas o en los libros. Las tradiciones académicas aún otorgan gran peso a las clases en las que un docente monopoliza la palabra y oficia de modelo interlocutor; sin embargo, estas imágenes han puesto en valor estos otros modos de propiciar espacios formativos, intercalando estilos pedagógicos que permiten la convivencia de momentos expositivos con momentos de trabajos en grupos y de puestas en común, desbaratando la nada neutral distribución de los bancos mirando hacia el pizarrón. La luminosidad que el fotógrafo eligió es quizás un indicio de ambientes acogedores o propicios para poner en tensión los conocimientos sobre la literatura, para generar preguntas y buscar respuestas a lo propio y a lo colectivo, para crear oportunidades para múltiples interpretaciones en las que cada estudiante sea considerado alguien que tiene algo valioso para decir.
+        <br>
+           ¿Quiénes son esos sujetos, esas personas que eligen la docencia? Las investigaciones sobre las biografías lectoras de estudiantes de profesorados, desde un enfoque transdisciplinario, destacan el potencial reflexivo que tiene reconstruir trayectorias personales de los tempranos contactos con la cultura escrita durante la infancia y la adolescencia, etapa en la que el aprender está asociado a los vínculos afectivos y a las marcas que dejan las primeras experiencias de alfabetización (Bosco, 2024). En este sentido, tal como lo señalan estos aportes, la alfabetización académica en la Educación Superior puede habilitar un diálogo con las teorías y las investigaciones sociológicas y antropológicas de la lectura para tomar distancia y desnaturalizar una idea de “lectura” modélica o ideal; también, para construir categorías y conceptos que les permitan valorizar recorridos lectores singulares, entramados a identidades familiares, regionales, epocales y generacionales.
+        <br>
+        
+           Conocer algunas de las discusiones interdisciplinarias sobre la lectura como práctica social y cultural —como un campo prolífero que renueva sus debates a la velocidad de las nuevas tecnologías— puede contribuir a procesos de reconocimiento y de autodescubrimiento (Bosco, 2024), cuando se proponen actividades para escribir las biografías lectoras, en clave de historias únicas, empíricas y situadas.
+        </p>
+        <h4 class="bordo my-2">
+          5.
+        </h4>
+        <p>
+          La formación de docentes de literatura puede verse hoy retratada en un espejo de múltiples caras. Del manual como único recurso transmisor de un canon oficial de autores y obras consagradas a la disponibilidad de textos ofrecidos en una mesa servida, abriendo el universo hacia ediciones de distintas regiones del país: independientes y grandes sellos. Del libro de tapas duras y brillantes a su diversificación en fotocopias, versiones en PDF, en celulares, <em>notebooks</em> o <em>tablets</em>, audiolibros y videos de autores y autoras leyendo sus textos. La industria editorial ha crecido y ha sufrido también los avatares de numerosas crisis, pero sigue sosteniendo su poder a la hora de pensar en el acceso a un acervo cultural cifrado en publicaciones en diversos soportes.
+        <br>
+    
+          Los espacios del profesorado —entendidos como un ecosistema formativo (sus aulas, sus salas de biblioteca, sus pasillos, su cantina, el patio y otros escenarios extraescolares)— pueden ser grandes ocasiones para la formación de futuros y futuras docentes que interroguen y se pregunten el porqué y el para qué vale la pena conocer un acervo literario. Ocasiones para que consideren la práctica de la lectura como una experiencia subjetiva que demanda condiciones propicias para la exploración, la interacción con otros y la recursividad de procesos de escritura que se alejen del ejercicio monocorde, de la repetición y la reproducción.
+        <br>
+        
+          La construcción de unas bases de conocimientos que habiliten a un profesional a desempeñarse en aulas de literatura pensadas como encuentros (Petit, 2000) y a diseñar propuestas de enseñanza para que la escuela sea esa gran ocasión (Montes, 2006) exige tiempos expandidos y densos, capaces de anidar procesos subjetivos imposibles de ser cuantificados o acreditados bajo estándares predeterminados por agentes externos. <br>
+Las actuales carreras de formación docente aseguran un lapso prolongado de cursado de cuatro años. Sin embargo, se vuelve crucial problematizar el conjunto de saberes disciplinarios y sus articulaciones entre formatos pedagógicos para garantizar un recorrido que contemple propósitos que afectan ciertas dimensiones sensibles y subjetivas —propias de la experiencia artística— de los futuros mediadores. Formar lectores literarios responsables de la promoción de la lectura y de la mediación en las escuelas —entendida esta tarea como <em>polinizadora</em> (Ortiz, 2024)— exige propuestas didácticas diversificadas que garanticen la democratización del saber y el acceso al acervo cultural y literario desde una perspectiva de derechos.
+        <br>
+        
+          El derecho a la literatura es el derecho a la experiencia literaria, esa que nos hace más conscientes de nuestra condición humana, precaria y móvil, pero también indeterminada, reñida con lo utilitario, lo instrumental y lo insensible. Acompañar y alentar la formación de lectores y lectoras, desde la convicción del empoderamiento que habilita la lectura literaria, exige tiempos no acelerados en la mirada y la escucha atenta, en la co-construcción de un saber sobre la literatura que persiga, entre sus propósitos más profundos, la búsqueda de una voz propia. Es decir, la convicción pedagógica, política y estética de que la literatura es una institución social, con su peso, sus tradiciones y sus circuitos de legitimidad, pero que puede ser también un instrumento de intervención sobre el mundo, porque puede ayudarnos a interrogarnos, a perturbarnos, a mirar nuestro propio mundo, y el que nos rodea, desde otras claves y, por lo tanto, asociarla a una práctica emancipatoria (Andruetto, 2015).
+        </p>
+        <h4 class="bordo my-2">
+          Laberíntico cierre
+        </h4>
+        <p>
+          Las palabras de este ensayo encarnan una deriva en busca de ese pulso que late: el del tiempo no perdido, el de las evocaciones de un álbum que van abriendo los caminos en el bosque de una historia de las prácticas de la formación docente y sus múltiples debates.<br> 
+Animarse a pensar la formación de docentes en el remolino de la imaginación puede ser una apuesta para inventarnos un lente de etnógrafo, para reflexionar sobre las escenas de lectura y de escritura de una escuela retratadas en las fotos como un “manuscrito extranjero, borroso, plagado de elipsis, de incoherencias” (Geertz, 2003, p. 24). El ejercicio lúdico puede ser más que un acto intelectual, un antídoto para no perder la capacidad de sorprendernos, de estar atentos y atentas, y para no dejar que el velo de lo conocido nos impida ver y comprender otras capas de la vida cotidiana. La cultura escolar y material que encarnan las prácticas de lectura y de escritura, refractadas en este dúo imágenes/palabras, resulta una urdimbre a la que nos entramamos en busca de una interpretación que sacuda los lugares comunes, que revalorice los gestos de quienes se ocupan de la formación docente, renovando los repertorios de sus propuestas formativas.
+        </p>
+              
+
+        <p class="arena3 my-4 text-center h2">⥈</p>
+
+        <hr class="my-5" style="color: arena4;"/>
+     
+    </div>
+      </div>
+      <div style="text-align: center; margin: 20px 0;">
+  <a href="img/fotosIT3/Capas hojaldradas.pdf" 
+     class="btn" 
+     style="background-color:#7a0026; color:#fff; border:none;" target="_blank">
+     Descargar ensayo
+  </a>
+</div>
+</div>
+
+  <div id="referencias" class="jumbotron d-flex p-4 align-items-center bg-arena2" style="min-height: 50vh;">
+    <div class="container-fluid " >
+      <div class="row justify-content-center">
+        <div class="col-sm-8 arena4">
+         <h4 class="arena4 my-4">Referencias</h4>
+        <p>
+          Bahloul, J. (2002). <i>Cuadernos de Educación</i>, 1(2), 46-49.
+        </p>
+        <p>
+          Barthes, R. (1994). <i>El susurro del lenguaje. Más allá de la palabra y de la escritura</i>. Buenos Aires: Paidós.
+        </p>
+        <p>
+          Barthes, R. (1989). <i>La cámara lúcida. Notas sobre la fotografía</i>. Barcelona: Paidós.
+        </p>
+        <p>
+          Bombini, G. (2015). <i>Los arrabales de la literatura. La historia de la enseñanza literaria en la escuela secundaria argentina (1860-1960)</i>. Buenos Aires: Miño y Dávila.
+        </p>
+        <p>
+          Borges, J. (2010). <i>Arte poética. Seis conferencias</i>. Barcelona: Crítica.
+        </p>
+        <p>
+          Bosco, M. (2024). <i>La lectura en las trayectorias de vida lectora de estudiantes del Profesorado de Educación Inicial </i>[inédito]. Córdoba: FFyH, UNC.
+        </p>
+        <p>
+          Chartier, R. (1999). <i>Cultura escrita, literatura e historia. Coacciones transgredidas y libertades restringidas. Conversaciones de Roger Chartier con Carlos Aguirre Anaya, Jesús Anaya Rosique, Daniel Goldin y Antonio Saborit</i>. México: Fondo de Cultura Económica.
+        </p>
+        <p>
+          Eco, U. (1987). <i>Lector in fabula. La cooperación interpretativa en el texto narrativo</i>. Barcelona: Lumen.
+        </p>
+         <p>
+          Falconi, O. (2023). <i>Enseñanza y cultura material en la escuela. Tensiones entre inclusión y obligatoriedad en la secundaria</i>. Ciudad Autónoma de Buenos Aires: Aique.
+        </p>
+        <p>
+          Geertz, C. (2003). <i>La interpretación de las culturas</i>. Barcelona: Gedisa.
+        </p>
+         <p>
+          Montes, G. (2006). <i>La gran ocasión. La escuela como sociedad de lectura</i>. Ciudad Autónoma de Buenos Aires: Plan Nacional de Lectura.
+        </p>
+         <p>
+          Ortiz, M. F. (Coord.). (2024). <i>Polinizar. Reflexiones sobre enseñanza de la literatura entre bordes y desbordes</i>. Córdoba: Universidad Nacional de Córdoba, Facultad de Filosofía y Humanidades.
+        </p>
+        <p>
+          Petit, M. (2000). <i>Elogio del encuentro</i>. Cartagena de Indias: IBBY.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bio" class="jumbotron d-flex p-4 align-items-center bg-verdemusgo" style="min-height: 50vh;">
+    <div class="container-fluid" >
+      <div class="row justify-content-center">
+        <div class="col-lg-1 text-left">
+          <img src="img/fotosIT3/ensayistas/F_Ortiz.png" alt="" style="opacity: 0.8; margin-bottom: 1.5em; margin-right: 1em; width: 7em;" class="img-fluid" >
+         </div>
+        <div class="col-lg-7">
+          <p style="color: white"><span class="arena4"><strong>Florencia Ortiz</strong></span> es doctora en Semiótica (CEA - UNC); profesora y licenciada en Letras Modernas, Especialista en Enseñanza de la Lengua y la Literatura (FFyH - UNC). Profesora a cargo de Enseñanza de la literatura, del Profesorado en Letras Modernas,
+Facultad de Filosofía y Humanidades de la UNC. Directora de un equipo de investigación, vicedirectora y docente en las carreras de Maestría y Especialización en Didáctica de la Lengua y de la Literatura, Facultad de Filosofía y Humanidades, Universidad Nacional de Córdoba. Docente en un instituto de formación docente de Unquillo. Miembro de CEDILIJ (Centro de Difusión e Investigación de Literatura Infantil y Juvenil). Sus publicaciones están vinculadas con la formación docente y la enseñanza de la Literatura.
+ 
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<!-- MODAL 11 -->
+<div class="modal fade" id="foto11" tabindex="-1" aria-labelledby="foto11Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 11</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/3. SOPORTES PARA LA LECTURA/OPTIMIZADAS WEB/11.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 8 -->
+<div class="modal fade" id="foto8" tabindex="-1" aria-labelledby="foto8Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 8</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/1. PRÁCTICAS DE LECTURA/OPTIMIZADAS WEB/08.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 14 -->
+<div class="modal fade" id="foto14" tabindex="-1" aria-labelledby="foto14Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 14</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/3. SOPORTES PARA LA LECTURA/OPTIMIZADAS WEB/14.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 21 -->
+<div class="modal fade" id="foto21" tabindex="-1" aria-labelledby="foto21Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 21</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/2. ESPACIOS DE LECTURA/OPTIMIZADAS WEB/21.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 16 -->
+<div class="modal fade" id="foto16" tabindex="-1" aria-labelledby="foto16Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 16</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/3. SOPORTES PARA LA LECTURA/OPTIMIZADAS WEB/16.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 10 -->
+<div class="modal fade" id="foto10" tabindex="-1" aria-labelledby="foto10Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 10</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/3. SOPORTES PARA LA LECTURA/OPTIMIZADAS WEB/10.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 24 -->
+<div class="modal fade" id="foto24" tabindex="-1" aria-labelledby="foto24Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 24</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/2. ESPACIOS DE LECTURA/OPTIMIZADAS WEB/24.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 7 -->
+<div class="modal fade" id="foto7" tabindex="-1" aria-labelledby="foto7Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 7</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/1. PRÁCTICAS DE LECTURA/OPTIMIZADAS WEB/07.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 5 -->
+<div class="modal fade" id="foto5" tabindex="-1" aria-labelledby="foto5Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/1. PRÁCTICAS DE LECTURA/OPTIMIZADAS WEB/05.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 18 -->
+<div class="modal fade" id="foto18" tabindex="-1" aria-labelledby="foto18Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 18</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/2. ESPACIOS DE LECTURA/OPTIMIZADAS WEB/18.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 2 -->
+<div class="modal fade" id="foto2" tabindex="-1" aria-labelledby="foto2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/1. PRÁCTICAS DE LECTURA/OPTIMIZADAS WEB/02.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 6 -->
+<div class="modal fade" id="foto6" tabindex="-1" aria-labelledby="foto6Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/1. PRÁCTICAS DE LECTURA/OPTIMIZADAS WEB/06.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 9 -->
+<div class="modal fade" id="foto9" tabindex="-1" aria-labelledby="foto9Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 9</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/1. PRÁCTICAS DE LECTURA/OPTIMIZADAS WEB/09.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 20 -->
+<div class="modal fade" id="foto20" tabindex="-1" aria-labelledby="foto20Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 20</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/2. ESPACIOS DE LECTURA/OPTIMIZADAS WEB/20.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL 2 -->
+<div class="modal fade" id="foto2" tabindex="-1" aria-labelledby="foto2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="img/fotosIT3/1. PRÁCTICAS DE LECTURA/OPTIMIZADAS WEB/02.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- BLOQUE CRÉDITOS -->
+<div id="creditos" class="jumbotron d-flex min-vh-100 p-4 align-items-center bg-naranja parallax sans-serif" style="background-image: url(img/Img_fondo_footer.png); background-size: cover; background-position: center;">
+  <div class="container-fluid">
+    
+    
+      <div class="row justify-content-center my-5">
+      <div class="col-sm-10">
+        
+        <p class="h5">Autoría</p>
+        <p class="small">Florencia Ortiz </p>
+          
+        <h5>Equipo de producción del ensayo</h5>
+        <p class="small">Corrección literaria: Martín Schuliaquer y Juan Pablo Spinassi<br>
+        Diseño gráfico: Renata Malpassi y Paula Fernández<br>
+        
+        Diseño web: Matías Rosini</p>
+
+
+          <h5>Serie de álbumes “Fotografías de escuelas: el arte de la observación”</h5>
+          <p>Una propuesta fotográfica que captura escenas en las instituciones educativas de formación docente y reflexiona pedagógicamente sobre ellas.<br>
+          Esta serie constituye un subproyecto de “Itinerarios en el tiempo. Una cartografía de la formación docente en Córdoba”.<br>
+        <a href="https://isep-cba.edu.ar/itinerarioseneltiempo" 
+   target="_blank" 
+   style="color:white; text-decoration:underline;">
+   https://isep-cba.edu.ar/itinerarioseneltiempo
+</a></p>
+          <p class="small"> Dirección: Adriana Fontana <br> Coordinación general: Luciana Cometto y Luciana Dadone <br> Coordinación del subproyecto “Fotografías de escuelas: el arte de la observación”: Fabián Iglesias y Mariana Schneider</p>
+          <hr class="my-5" style="color: arena4;"/>
+ 
+          <p>Cómo citar este material<br>Ortiz, F. y equipos de producción del ISEP. (2024). Capas hojaldradas. En busca del tiempo no perdido en la formación de docentes de lengua y literatura. <em>Itinerarios en el Tiempo. Una cartografía de la formación docente en Córdoba.</em> Para el Instituto Superior de Estudios Pedagógicos, Ministerio de Educación de la Provincia de Córdoba.</p>
+         
+          
+          <p class="small">
+  <em>Este material está bajo una licencia Creative Commons (CC BY-NC 4.0)</em><br>
+  <img src="img/fotosIT3/cclogo.png" alt="Logo Creative Commons" style="width:60px; display:inline-block; margin-top:6px;">
+</p>
+
+
+          
+      </div>
+    </div>
+
+
+<script src="scripts.js"></script> 
+</body>
+</html>
