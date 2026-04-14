@@ -575,3 +575,10 @@ height: 3.5em;
   width: 100%;
   padding: 10px;           /* aire alrededor */
 }
+
+#albumes .card-img-top {
+  height: auto;        /* elimina altura fija */
+  object-fit: cover;   /* comportamiento natural */
+  padding: 0;          /* elimina márgenes internos */
+  width: 100%;         /* ocupa todo el ancho */
+}
